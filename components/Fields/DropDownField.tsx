@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+
 
 export default function DropDownField(props: any) {
   const { properties, handleData, name } = props;
-  const [style, setStyle] = useState(properties.style || {});
 
   const handleChange = (e: any) => {
     handleData(e.target.value);

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 export default function CheckBoxField(props: any) {
   const { properties, handleData, name } = props;
-  const [style, setStyle] = useState(properties.style || {});
   const [chechBoxData, setCheckBoxData] = useState({});
 
   const handleChange = (e: any) => {
